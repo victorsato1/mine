@@ -879,7 +879,7 @@ footer{
       display: flex;
       flex-direction: column;
       background-color: darkgreen;
-      height: 165vh;
+      height: 195vh;
   }
   .abt{
       margin-top: 75px;
@@ -923,7 +923,7 @@ footer{
   }
   footer{
       background-color: rgb(0, 0, 0);
-      height:90.5vh;
+      height:110.5vh;
       border-bottom: 1px solid rgba(255, 255, 255, 0.261);
   }
   .ck{
