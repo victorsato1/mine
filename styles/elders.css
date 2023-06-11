@@ -86,109 +86,71 @@ body{
 .dropdown_menu ul li a{
     color: white;
 }
-#sec{
-    background: url(https://thumbs.dreamstime.com/b/green-agriculture-field-tomatoes-blue-sky-green-agriculture-field-tomatoes-blue-sky-clouds-125693663.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    width: 100%;
-    height: 90vh;
+
+.all-products{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 }
-h3{
-    text-shadow: 2.5px 2.5px black;
-    font-weight: bolder;
-    text-align: center;
-    position: relative;
-    top: 50%;
-    left: 35%;
-    color: white;
-    font-size: 35px;
-    width: 35%;
+
+.product{
+	overflow: hidden;
+	background: #ffffff;
+	color: #21201e;
+	text-align: left;
+	width: 240px;
+	height: 400px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.2rem;
+	margin: 2rem;
 }
-.btn2{
-    position: relative;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    top: 55%;
-    left: 46%;
-    padding: 15px 25px;
-    font-size: 15px;
-    font-weight: bolder;
-    color: darkgreen;
-    text-transform: uppercase;
-    border-radius: 10px;
-    text-decoration: none;
+
+.product .product-title, .product .product-price{
+	font-size: 18px;
 }
-#service{
-    height: 80vh;
+
+.product:hover img{
+	scale:  1.1;
 }
-.😁{
-    text-shadow: none;
+
+.product:hover {
+	box-shadow: 5px 15px 25px #eeeeee;
+}
+
+.product img {
+	height: 200px;
+	margin: 1rem;
+	transition: all 0.3s;
+}
+
+.product a:link, .product a:visited{
+	color: #ececec;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #2c3e50;
+	padding: 1.2rem 3rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 14px;
+	transition: all 0.2s;
+}
+
+.product a:hover{
+	transform: scale(1.1);
+}
+h2{
+	text-align: center;
     margin-top: 50px;
-    color: black;
-    font-size: 40px;
-    text-align: center;
+	font-size: 3rem;
     text-transform: uppercase;
-}
-.one{
-    height: 45vh;
-    width: 400px;
-    margin-right: 30px;
-}
-.three{
-    height: 45vh;
-    width: 400px;
-}
-.all{
-    margin-top: 70px;
-    margin-left:50px;
+    color: orangered;
 }
 
-#about{
-    display: flex;
-    flex-direction: row;
-    background-color: darkgreen;
-}
-.abt{
-    margin-top: 125px;
-    width: 60%;
-    margin-left: 100px;
-}
-.btn3{
-    position: relative;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    top: 10%;
-    left: 1%;
-    padding: 15px 25px;
-    font-size: 15px;
-    font-weight: bolder;
-    color: darkgreen;
-    text-transform: uppercase;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-h4{
-    font-size: 65px;
-    color: white;
-    margin-bottom: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-}
-.ig{
-    margin-top: 125px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 80vh;
-    padding-right: 100px;
-}
-.dent{
-    color: rgba(255, 255, 255, 0.551);
-    font-size: 16px;
-    line-height: 35px;
-}
 footer{
     background-color: rgb(0, 0, 0);
     height: 70vh;
@@ -303,8 +265,151 @@ footer{
     text-transform: capitalize;
 
 }
+@media (max-width:320px){
+    html,body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+      }
+h2{
+	text-align: center;
+	font-size: 30px;
+}
 
+.all-products{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
 
+.product{
+	overflow: hidden;
+	background: #ffffff;
+	color: #21201e;
+	text-align: center;
+	width: 240px;
+	height: 400px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.2rem;
+	margin: 2rem;
+}
+
+.product .product-title, .product .product-price{
+	font-size: 18px;
+}
+
+.product:hover img{
+	scale:  1.1;
+}
+
+.product:hover {
+	box-shadow: 5px 15px 25px #eeeeee;
+}
+
+.product img {
+	height: 200px;
+    width: 110%;
+	margin: 1rem;
+	transition: all 0.3s;
+}
+
+.product a:link, .product a:visited{
+	color: #ececec;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #2c3e50;
+	padding: 1.2rem 3rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 14px;
+	transition: all 0.2s;
+}
+
+.product a:hover{
+	transform: scale(1.1);
+}
+
+}
+@media (max-width:480px){
+    
+    html,body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+      }
+      h2{
+        text-align: center;
+        font-size: 35px;
+    }
+.all-products{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.product{
+	overflow: hidden;
+	background: #ffffff;
+	color: #21201e;
+	text-align: center;
+	width: 550px;
+	height: 600px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.2rem;
+	margin: 1px;
+    margin-bottom: 50px;
+}
+
+.product .product-title, .product .product-price{
+	font-size: 18px;
+}
+
+.product:hover img{
+	scale:  1.1;
+}
+
+.product:hover {
+	box-shadow: 5px 15px 25px #eeeeee;
+}
+
+.product img {
+	height: 300px;
+    width:100%;
+	margin: 1rem;
+	transition: all 0.3s;
+}
+
+.product a:link, .product a:visited{
+	color: #ececec;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #2c3e50;
+	padding: 1.2rem 1.2rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 12px;
+	transition: all 0.2s;
+}
+
+.product a:hover{
+	transform: scale(1.1);
+}
+
+}
 @media only screen and (min-width:319px) and (max-width: 321px){
     html,body{
       margin: 0;
@@ -320,7 +425,7 @@ footer{
       display: flex;
       margin-top: 40px;
       margin-left: 7%;
-      gap: 38px;
+      gap: 35px;
       margin-bottom: 10px;
   }
   .all2 li a{
@@ -350,112 +455,6 @@ footer{
 .dropdown_menu ul li a{
     color: white;
 }
-  #sec{
-      background: url(https://thumbs.dreamstime.com/b/green-agriculture-field-tomatoes-blue-sky-green-agriculture-field-tomatoes-blue-sky-clouds-125693663.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      width: 100%;
-      height: 70vh;
-      background-position: bottom;
-  }
-  
-  h3{
-      text-align: left;
-      position: relative;
-      top: 40%;
-      left: 5%;
-      color: white;
-      font-size: 35px;
-      width: 90%;
-  }
-  .btn2{
-      position: relative;
-      border: none;
-      background-color: rgb(255, 255, 255);
-      top: 50%;
-      left: 32%;
-      padding: 15px 25px;
-      font-size: 20px;
-      font-weight: bolder;
-      color: darkgreen;
-      text-transform: uppercase;
-      border-radius: 10px;
-  display: none;
-  }
-  #service{
-      height: 170vh;
-  }
-  .😁{
-      margin-top: 50px;
-      color: black;
-      font-size: 40px;
-      text-align: center;
-      text-transform: uppercase;
-  }
-  .one{
-      border-radius: 10px;
-      height: 40vh;
-      width: 260px;
-  }
-  .three{
-      border-radius: 10px;
-      height: 40vh;
-      width: 260px;
-      margin-top: 50px;
-      margin-bottom: 50px;
-  }
-  .all{
-      margin-top: 70px;
-      margin-left:35px;
-  }
-  
-  #about{
-      display: flex;
-      flex-direction: column;
-      background-color: darkgreen;
-      height: 205vh;
-  }
-  .abt{
-      margin-top: 75px;
-      width: 85%;
-      margin-left: 40px;
-  }
-  h4{
-      font-size: 44px;
-      color: white;
-      margin-bottom: 30px;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-weight: bold;
-  }
-  .btn3{
-      position: relative;
-      border: none;
-      background-color: rgb(255, 255, 255);
-      top: 7%;
-      left: 1%;
-      padding: 15px 25px;
-      font-size: 15px;
-      font-weight: bolder;
-      color: darkgreen;
-      text-transform: uppercase;
-      border-radius: 10px;
-      text-decoration: none;
-  }
-  .ig{
-      margin-top: 125px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 110%;
-      height: 40vh;
-      margin-left: 32px;
-      margin-bottom: 20px;
-  }
-  .dent{
-      color: rgba(255, 255, 255, 0.551);
-      font-size: 15px;
-      line-height: 35px;
-  }
   footer{
       background-color: rgb(0, 0, 0);
       height:125.5vh;
@@ -606,7 +605,6 @@ footer{
   .all2 li a:hover{
       color: green;
   }
- 
   .open{
     display: block;
     position: fixed;
@@ -624,112 +622,6 @@ footer{
 .dropdown_menu ul li a{
     color: white;
 }
-  #sec{
-      background: url(https://thumbs.dreamstime.com/b/green-agriculture-field-tomatoes-blue-sky-green-agriculture-field-tomatoes-blue-sky-clouds-125693663.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      width: 100%;
-      height: 70vh;
-      background-position: bottom;
-  }
-  
-  h3{
-      text-align: left;
-      position: relative;
-      top: 40%;
-      left: 5%;
-      color: white;
-      font-size: 35px;
-      width: 90%;
-  }
-  .btn2{
-      position: relative;
-      border: none;
-      background-color: rgb(255, 255, 255);
-      top: 50%;
-      left: 32%;
-      padding: 15px 25px;
-      font-size: 20px;
-      font-weight: bolder;
-      color: darkgreen;
-      text-transform: uppercase;
-      border-radius: 10px;
-  display: none;
-  }
-  #service{
-      height: 160vh;
-  }
-  .😁{
-      margin-top: 50px;
-      color: black;
-      font-size: 40px;
-      text-align: center;
-      text-transform: uppercase;
-  }
-  .one{
-      border-radius: 10px;
-      height: 40vh;
-      width: 300px;
-  }
-  .three{
-      border-radius: 10px;
-      height: 40vh;
-      width: 300px;
-      margin-top: 50px;
-      margin-bottom: 50px;
-  }
-  .all{
-      margin-top: 70px;
-      margin-left:35px;
-  }
-  
-  #about{
-      display: flex;
-      flex-direction: column;
-      background-color: darkgreen;
-      height: 200vh;
-  }
-  .abt{
-      margin-top: 75px;
-      width: 85%;
-      margin-left: 40px;
-  }
-  h4{
-      font-size: 44px;
-      color: white;
-      margin-bottom: 30px;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-weight: bold;
-  }
-  .btn3{
-      position: relative;
-      border: none;
-      background-color: rgb(255, 255, 255);
-      top: 7%;
-      left: 1%;
-      padding: 15px 25px;
-      font-size: 15px;
-      font-weight: bolder;
-      color: darkgreen;
-      text-transform: uppercase;
-      border-radius: 10px;
-      text-decoration: none;
-  }
-  .ig{
-      margin-top: 125px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 110%;
-      height: 40vh;
-      margin-left: 32px;
-      margin-bottom: 20px;
-  }
-  .dent{
-      color: rgba(255, 255, 255, 0.551);
-      font-size: 19px;
-      line-height: 35px;
-  }
   footer{
       background-color: rgb(0, 0, 0);
       height:115.5vh;
@@ -884,7 +776,7 @@ footer{
     display: block;
     position: fixed;
     background-color: darkgreen;
-    top: 15.1%;
+    top: 14.1%;
     left: 40%;
 }
 .dropdown_menu ul li{
@@ -897,112 +789,6 @@ footer{
 .dropdown_menu ul li a{
     color: white;
 }
-  #sec{
-      background: url(https://thumbs.dreamstime.com/b/green-agriculture-field-tomatoes-blue-sky-green-agriculture-field-tomatoes-blue-sky-clouds-125693663.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      width: 100%;
-      height: 70vh;
-      background-position: bottom;
-  }
-  
-  h3{
-      text-align: left;
-      position: relative;
-      top: 40%;
-      left: 5%;
-      color: white;
-      font-size: 35px;
-      width: 90%;
-  }
-  .btn2{
-      position: relative;
-      border: none;
-      background-color: rgb(255, 255, 255);
-      top: 50%;
-      left: 32%;
-      padding: 15px 25px;
-      font-size: 20px;
-      font-weight: bolder;
-      color: darkgreen;
-      text-transform: uppercase;
-      border-radius: 10px;
-  display: none;
-  }
-  #service{
-      height: 160vh;
-  }
-  .😁{
-      margin-top: 50px;
-      color: black;
-      font-size: 40px;
-      text-align: center;
-      text-transform: uppercase;
-  }
-  .one{
-      border-radius: 10px;
-      height: 40vh;
-      width: 300px;
-  }
-  .three{
-      border-radius: 10px;
-      height: 40vh;
-      width: 300px;
-      margin-top: 50px;
-      margin-bottom: 50px;
-  }
-  .all{
-      margin-top: 70px;
-      margin-left:35px;
-  }
-  
-  #about{
-      display: flex;
-      flex-direction: column;
-      background-color: darkgreen;
-      height: 195vh;
-  }
-  .abt{
-      margin-top: 75px;
-      width: 85%;
-      margin-left: 40px;
-  }
-  h4{
-      font-size: 44px;
-      color: white;
-      margin-bottom: 30px;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-weight: bold;
-  }
-  .btn3{
-      position: relative;
-      border: none;
-      background-color: rgb(255, 255, 255);
-      top: 7%;
-      left: 1%;
-      padding: 15px 25px;
-      font-size: 15px;
-      font-weight: bolder;
-      color: darkgreen;
-      text-transform: uppercase;
-      border-radius: 10px;
-      text-decoration: none;
-  }
-  .ig{
-      margin-top: 125px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 110%;
-      height: 40vh;
-      margin-left: 32px;
-      margin-bottom: 20px;
-  }
-  .dent{
-      color: rgba(255, 255, 255, 0.551);
-      font-size: 19px;
-      line-height: 35px;
-  }
   footer{
       background-color: rgb(0, 0, 0);
       height:110.5vh;
@@ -1158,12 +944,13 @@ footer{
 }
 .all2 li a:hover{
     color: green;
-} 
+}
+
 .open{
     display: block;
     position: fixed;
     background-color: darkgreen;
-    top: 15.1%;
+    top: 13.1%;
     left: 40%;
 }
 .dropdown_menu ul li{
@@ -1175,112 +962,6 @@ footer{
 }
 .dropdown_menu ul li a{
     color: white;
-}
-#sec{
-    background: url(https://thumbs.dreamstime.com/b/green-agriculture-field-tomatoes-blue-sky-green-agriculture-field-tomatoes-blue-sky-clouds-125693663.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 70vh;
-    background-position: bottom;
-}
-
-h3{
-    text-align: left;
-    position: relative;
-    top: 45%;
-    left: 5%;
-    color: white;
-    font-size: 35px;
-    width: 90%;
-}
-.btn2{
-    position: relative;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    top: 50%;
-    left: 32%;
-    padding: 15px 25px;
-    font-size: 20px;
-    font-weight: bolder;
-    color: darkgreen;
-    text-transform: uppercase;
-    border-radius: 10px;
-display: none;
-}
-#service{
-    height: 160vh;
-}
-.😁{
-    margin-top: 50px;
-    color: black;
-    font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
-}
-.one{
-    border-radius: 10px;
-    height: 40vh;
-    width: 335px;
-}
-.three{
-    border-radius: 10px;
-    height: 40vh;
-    width: 335px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.all{
-    margin-top: 70px;
-    margin-left:45px;
-}
-
-#about{
-    display: flex;
-    flex-direction: column;
-    background-color: darkgreen;
-    height: 170vh;
-}
-.abt{
-    margin-top: 75px;
-    width: 85%;
-    margin-left: 40px;
-}
-h4{
-    font-size: 44px;
-    color: white;
-    margin-bottom: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-}
-.btn3{
-    position: relative;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    top: 7%;
-    left: 1%;
-    padding: 15px 25px;
-    font-size: 15px;
-    font-weight: bolder;
-    color: darkgreen;
-    text-transform: uppercase;
-    border-radius: 10px;
-    text-decoration: none;
-}
-.ig{
-    margin-top: 125px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 110%;
-    height: 40vh;
-    margin-left: 32px;
-    margin-bottom: 20px;
-}
-.dent{
-    color: rgba(255, 255, 255, 0.551);
-    font-size: 19px;
-    line-height: 35px;
 }
 footer{
     background-color: rgb(0, 0, 0);
@@ -1438,111 +1119,7 @@ footer{
     .all2 li a:hover{
         color: green;
     }
-    #sec{
-        background: url(https://thumbs.dreamstime.com/b/green-agriculture-field-tomatoes-blue-sky-green-agriculture-field-tomatoes-blue-sky-clouds-125693663.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 70vh;
-        background-position: bottom;
-    }
-    
-    h3{
-        text-align: center;
-        position: relative;
-        top: 45%;
-        left: 13.9%;
-        color: white;
-        font-size: 45px;
-        width: 75%;
-    }
-    .btn2{
-        position: relative;
-        border: none;
-        background-color: rgb(255, 255, 255);
-        top: 55%;
-        left: 37%;
-        padding: 15px 25px;
-        font-size: 25px;
-        font-weight: bolder;
-        color: darkgreen;
-        text-transform: uppercase;
-        border-radius: 10px;
-        text-decoration: none;
-    }
-    #service{
-        height: 165vh;
-    }
-    .😁{
-        margin-top: 50px;
-        color: black;
-        font-size: 60px;
-        text-align: center;
-        text-transform: uppercase;
-    }
-    .one{
-        height: 45vh;
-        width: 700px;
-    }
-    .three{
-        height: 45vh;
-        width: 700px;
-        margin-bottom: 50px;
-        margin-top: 50px;
-    }
-    
-.btn3{
-    position: relative;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    top: 7%;
-    left: 1%;
-    padding: 15px 25px;
-    font-size: 25px;
-    font-weight: bolder;
-    color: darkgreen;
-    text-transform: uppercase;
-    border-radius: 10px;
-    text-decoration: none;
-}
-    .all{
-        margin-top: 70px;
-        margin-left:30px;
-    }
-    
-#about{
-    display: flex;
-    flex-direction: column;
-    background-color: darkgreen;
-    height: 130vh;
-}
-.abt{
-    margin-top: 75px;
-    width: 85%;
-    margin-left: 40px;
-}
-h4{
-    font-size: 47px;
-    color: white;
-    margin-bottom: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-}
-.ig{
-    margin-top: 145px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 45vh;
-    margin-left: 40px;
-    margin-bottom: 20px;
-}
-.dent{
-    color: rgba(255, 255, 255, 0.551);
-    font-size: 27px;
-    line-height: 35px;
-}
+   
 footer{
     background-color: rgb(0, 0, 0);
     height: 90vh;

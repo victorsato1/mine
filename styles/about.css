@@ -55,6 +55,37 @@ body{
     background-color: rgb(255, 255, 255);
     color: green;
 }
+
+#btnn{
+    border: none;
+    margin-bottom: 4px;
+    background-color: darkgreen;
+    text-transform: capitalize;
+    margin-left: 10px;
+    font-size: 20px;
+    color: white;
+    transition: all .30s ease;
+}
+.dropdown_menu{
+    display: none;
+}
+.open{
+    display: block;
+    position: absolute;
+    background-color: darkgreen;
+    top: 13.1%;
+    left: 72%;
+}
+.dropdown_menu ul li{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 9px;
+}
+.dropdown_menu ul li a{
+    color: white;
+}
 .active:hover{
     color: yellow;
 }
@@ -308,7 +339,7 @@ footer{
         display: flex;
         margin-top: 40px;
         margin-left: 6.5%;
-        gap: 45px;
+        gap: 38px;
         margin-bottom: 10px;
     }
     .all2 li a{
@@ -320,6 +351,23 @@ footer{
     }
     .all2 li a:hover{
         color: green;
+    }
+    .open{
+        display: block;
+        position: fixed;
+        background-color: darkgreen;
+        top: 16.7%;
+        left: 40%;
+    }
+    .dropdown_menu ul li{
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 6px;
+        margin-top: 10px;
+        margin-bottom: 9px;
+    }
+    .dropdown_menu ul li a{
+        color: white;
     }
 .btn{
     border: none;
@@ -605,6 +653,23 @@ footer{
     .all2 li a:hover{
         color: green;
     }
+    .open{
+        display: block;
+        position: fixed;
+        background-color: darkgreen;
+        top: 13.1%;
+        left: 40%;
+    }
+    .dropdown_menu ul li{
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 6px;
+        margin-top: 10px;
+        margin-bottom: 9px;
+    }
+    .dropdown_menu ul li a{
+        color: white;
+    }
 #about-section {
     width: 100%;
     height: auto;
@@ -870,6 +935,23 @@ footer{
     }
     .all2 li a:hover{
         color: green;
+    }
+    .open{
+        display: block;
+        position: fixed;
+        background-color: darkgreen;
+        top: 14.1%;
+        left: 40%;
+    }
+    .dropdown_menu ul li{
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 6px;
+        margin-top: 10px;
+        margin-bottom: 9px;
+    }
+    .dropdown_menu ul li a{
+        color: white;
     }
 .btn{
     border: none;
@@ -1150,6 +1232,23 @@ footer{
     }
     .all2 li a:hover{
         color: green;
+    }
+    .open{
+        display: block;
+        position: fixed;
+        background-color: darkgreen;
+        top: 15.1%;
+        left: 40%;
+    }
+    .dropdown_menu ul li{
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 6px;
+        margin-top: 10px;
+        margin-bottom: 9px;
+    }
+    .dropdown_menu ul li a{
+        color: white;
     }
 .btn{
     border: none;

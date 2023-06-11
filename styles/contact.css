@@ -60,6 +60,36 @@ body{
 }
 
 
+#btnn{
+  border: none;
+  margin-bottom: 4px;
+  background-color: darkgreen;
+  text-transform: capitalize;
+  margin-left: 10px;
+  font-size: 20px;
+  color: white;
+  transition: all .30s ease;
+}
+.dropdown_menu{
+  display: none;
+}
+.open{
+  display: block;
+  position: absolute;
+  background-color: darkgreen;
+  top: 13.1%;
+  left: 72%;
+}
+.dropdown_menu ul li{
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 9px;
+}
+.dropdown_menu ul li a{
+  color: rgb(255, 255, 255);
+}
 .container {
   position: relative;
   width: 100%;
