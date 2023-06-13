@@ -374,124 +374,294 @@ textarea.input {
   transform: translate(181%, 11%);
   opacity: 0.2;
 }
-
-
-
 footer{
-    background-color: rgb(0, 0, 0);
-    height: 70vh;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.261);
+  background-color: rgb(0, 0, 0);
+  height: 70vh;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.261);
 }
 .ck{
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .ck2{
-    width: 45%;
-    margin-top: 100px;
-    margin-left: 70px;
+  width: 45%;
+  margin-top: 100px;
+  margin-left: 70px;
 }
 .st{
-    font-size: 27px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    margin-bottom: 25px;
+  font-size: 27px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  margin-bottom: 25px;
 }
 #ema{
-    font-weight: bolder;
-    padding: .75em;
-    width: 100%;
-    height: 7vh;
-    border-width: 1px;
-    color: green;
-    border-radius: 3px;
+  font-weight: bolder;
+  padding: .75em;
+  width: 100%;
+  height: 7vh;
+  border-width: 1px;
+  color: green;
+  border-radius: 3px;
 }
 #ema::placeholder{
-    font-size: 15px;
-    color: rgba(0, 0, 0, 0.741);
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.741);
 }
 #sub{
-    margin-top: 30px;
-    border: none;
-    padding: 15px 25px;
-    background-color: white;
-    color: darkgreen;
-    letter-spacing: 2px;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bolder;
+  margin-top: 30px;
+  border: none;
+  padding: 15px 25px;
+  background-color: white;
+  color: darkgreen;
+  letter-spacing: 2px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
 .ck3{
-    margin-left: 15%;
-    margin-top: 100px;
+  margin-left: 15%;
+  margin-top: 100px;
 }
 .cont{
-    color: white;
-    font-size: 25px;
-    text-transform: capitalize;
-    margin-left: 35%;
-    margin-bottom: 25px;
+  color: white;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-left: 35%;
+  margin-bottom: 25px;
 }
 .add{
-    margin-left: 35%;
-    font-size: 17px;
-    margin-right: 8%;
-    text-transform: capitalize;
-    color: white;
-    line-height: 30px;
-    margin-bottom: 30px;
+  margin-left: 35%;
+  font-size: 17px;
+  margin-right: 8%;
+  text-transform: capitalize;
+  color: white;
+  line-height: 30px;
+  margin-bottom: 30px;
 }
 .cal{
-    margin-left: 35%;    color: darkgreen;
-    text-decoration: none;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    border-radius: 2px;
-    background-color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    font-size: 17px;
-    transition: all .5s ease;
-    text-align: center;
-    font-weight: bolder;
-    letter-spacing: 3px;
+  margin-left: 35%;    color: darkgreen;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 17px;
+  transition: all .5s ease;
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 3px;
 }
 .ca{
-   position: relative;
-   top: 10%;
-   left: 35%;
-   transition: all .5s ease;
-   color: darkgreen;
+ position: relative;
+ top: 10%;
+ left: 35%;
+ transition: all .5s ease;
+ color: darkgreen;
 }
 .ca2{
-   position: relative;
-   top: 25%;
-   left: -9%;
-   transition: all .5s ease;
-   color: darkgreen;
+ position: relative;
+ top: 25%;
+ left: -9%;
+ transition: all .5s ease;
+ color: darkgreen;
 }
 .ca:hover{
-    color: green;
+  color: green;
 }
 
 /* Last */
 .last{
-    background-color: black;
-    color: rgba(255, 255, 255, 0.468);
-    height: 15vh;
-    width: 100%;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.468);
+  height: 15vh;
+  width: 100%;
 }
 .cop{
-    padding-top: 50px;
-    margin-left: 70px;
-    font-size: 15px;
-    text-transform: capitalize;
+  padding-top: 50px;
+  margin-left: 70px;
+  font-size: 15px;
+  text-transform: capitalize;
 
 }
 
+@media only screen and (min-width:393px) and (max-height: 851px){
+  html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  .de{
+    margin-top: 30px;
+   font-size: 25px;
+   margin-left: 15px;
+   text-transform: capitalize;
+   color: rgb(255, 255, 255);
+   cursor: pointer;
+   display: none;
+}
+.all2{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 14%;
+    gap: 45px;
+    margin-bottom: 10px;
+}
+.all2 li a{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .30s ease;
+}
+.all2 li a:hover{
+    color: green;
+} 
+.open{
+    display: block;
+    position: fixed;
+    background-color: darkgreen;
+    top: 11.1%;
+    left: 40%;
+}
+.dropdown_menu ul li{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 6px;
+    margin-top: 10px;
+    margin-bottom: 9px;
+}
+.dropdown_menu ul li a{
+    color: white;
+}
+footer{
+  background-color: rgb(0, 0, 0);
+  height:85.5vh;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.261);
+}
+.ck{
+  display: flex;
+  flex-direction: column;
+}
+.ck2{
+  width: 90%;
+  margin-top: 100px;
+  margin-left: -10px;
+}
+.st{
+  margin-left: 30px;
+  font-size: 30px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  margin-bottom: 25px;
+}
+#ema{
+  padding: .75em;
+  width: 125%;
+  height: 6vh;
+  border-width: 1px;
+  color: green;
+  border-radius: 3px;
+}
+#ema::placeholder{
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.741);
+}
+#sub{
+  margin-top: 30px;
+  border: none;
+  padding: 15px 25px;
+  background-color: white;
+  color: darkgreen;
+  letter-spacing: 2px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.ck3{
+  margin-left: 1%;
+  margin-top: 40px;
+}
+.cont{
+  color: white;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-left: 30px;
+  margin-bottom: 25px;
+}
+.add{
+  width: 75%;
+  margin-left: 30px;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: white;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.cal{
+  margin-left: 30px;
+  color: darkgreen;
+  text-decoration: none;
+  padding-top: 13px;
+  padding-left: 20px;
+  padding-bottom: 13px;
+  padding-right: 20px;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 20px;
+  transition: all .5s ease;
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+.ca{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  margin-left: -105px;
+ transition: all .5s ease;
+ color: darkgreen;
+ font-size: 18px;
+}
+.ca:hover{
+  color: green;
+}
+.ca2{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  margin-left: 68px;
+ transition: all .5s ease;
+ color: darkgreen;
+ font-size: 18px;
+}
+.ca2:hover{
+  color: green;
+}
+/* Last */
+.last{
+  background-color: black;
+  color: rgba(255, 255, 255, 0.468);
+  height: 10vh;
+  width: 100%;
+}
+.cop{
+  line-height: 20px;
+  padding-top: 25px;
+  margin-left: 20px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+}
  @media (max-width: 420px) {
     html,body{
       margin: 0;
@@ -631,126 +801,125 @@ footer{
       padding: 0.45rem 1.2rem;
     }
     footer{
-        background-color: rgb(0, 0, 0);
-        height:120.5vh;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.261);
+      background-color: rgb(0, 0, 0);
+      height:95.5vh;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.261);
     }
     .ck{
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
     }
     .ck2{
-        width: 70%;
-        margin-top: 100px;
-        margin-left: 30px;
+      width: 90%;
+      margin-top: 100px;
+      margin-left: -10px;
     }
     .st{
-        font-size: 30px;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bolder;
-        margin-bottom: 25px;
+      margin-left: 30px;
+      font-size: 30px;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      margin-bottom: 25px;
     }
     #ema{
-        padding: .75em;
-        width: 135%;
-        height: 7vh;
-        border-width: 1px;
-        color: green;
-        border-radius: 3px;
-        margin-left: -20px;
+      padding: .75em;
+      width: 125%;
+      height: 6vh;
+      border-width: 1px;
+      color: green;
+      border-radius: 3px;
     }
     #ema::placeholder{
-        font-size: 18px;
-        color: rgba(0, 0, 0, 0.741);
+      font-size: 18px;
+      color: rgba(0, 0, 0, 0.741);
     }
     #sub{
-        margin-top: 30px;
-        border: none;
-        padding: 15px 25px;
-        background-color: white;
-        color: darkgreen;
-        letter-spacing: 2px;
-        font-size: 20px;
-        text-transform: uppercase;
-        font-weight: bolder;
-        margin-left: -20px;
+      margin-top: 30px;
+      border: none;
+      padding: 15px 25px;
+      background-color: white;
+      color: darkgreen;
+      letter-spacing: 2px;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: bolder;
     }
     
     .ck3{
-        margin-left: 1%;
-        margin-top: 70px;
+      margin-left: 1%;
+      margin-top: 40px;
     }
     .cont{
-        color: white;
-        font-size: 30px;
-        text-transform: capitalize;
-        margin-left: 30px;
-        margin-bottom: 25px;
+      color: white;
+      font-size: 30px;
+      text-transform: capitalize;
+      margin-left: 30px;
+      margin-bottom: 25px;
     }
     .add{
-        width: 75%;
-        margin-left: 30px;
-        font-size: 18px;
-        text-transform: capitalize;
-        color: white;
-        line-height: 30px;
-        margin-bottom: 30px;
+      width: 75%;
+      margin-left: 30px;
+      font-size: 18px;
+      text-transform: capitalize;
+      color: white;
+      line-height: 30px;
+      margin-bottom: 30px;
     }
     .cal{
-        margin-left: 30px;
-        color: darkgreen;
-        text-decoration: none;
-        padding-top: 13px;
-        padding-left: 20px;
-        padding-bottom: 13px;
-        padding-right: 20px;
-        border-radius: 2px;
-        background-color: rgb(255, 255, 255);
-        text-transform: uppercase;
-        font-size: 20px;
-        transition: all .5s ease;
-        text-align: center;
-        font-weight: bolder;
-        letter-spacing: 3px;
+      margin-left: 30px;
+      color: darkgreen;
+      text-decoration: none;
+      padding-top: 13px;
+      padding-left: 20px;
+      padding-bottom: 13px;
+      padding-right: 20px;
+      border-radius: 2px;
+      background-color: rgb(255, 255, 255);
+      text-transform: uppercase;
+      font-size: 20px;
+      transition: all .5s ease;
+      text-align: center;
+      font-weight: bolder;
+      letter-spacing: 3px;
     }
     .ca{
-        display: flex;
-        flex-direction: column;
-        margin-top: 10%;
-        margin-left: -95px;
-       transition: all .5s ease;
-       color: darkgreen;
-       font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 10%;
+      margin-left: -110px;
+     transition: all .5s ease;
+     color: darkgreen;
+     font-size: 18px;
     }
     .ca:hover{
-        color: green;
+      color: green;
     }
     .ca2{
-        display: flex;
-        flex-direction: column;
-        margin-top: 10%;
-        margin-left: 65px;
-       transition: all .5s ease;
-       color: darkgreen;
-       font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 10%;
+      margin-left: 70px;
+     transition: all .5s ease;
+     color: darkgreen;
+     font-size: 18px;
     }
     .ca2:hover{
-        color: green;
+      color: green;
     }
     /* Last */
     .last{
-        background-color: black;
-        color: rgba(255, 255, 255, 0.468);
-        height: 12vh;
-        width: 100%;
+      background-color: black;
+      color: rgba(255, 255, 255, 0.468);
+      height: 10vh;
+      width: 100%;
     }
     .cop{
-        line-height: 20px;
-        padding-top: 25px;
-        margin-left: 20px;
-        font-size: 12px;
-        text-transform: capitalize;
+      line-height: 20px;
+      padding-top: 25px;
+      margin-left: 20px;
+      font-size: 12px;
+      text-transform: capitalize;
     }
     
   }
@@ -1150,6 +1319,202 @@ footer{
     }
     
   }
+  @media only screen and (min-width: 414px) and (max-height:896px){
+    html,body{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+    }
+    .de{
+     display: none;
+  }
+  .all2{
+      display: flex;
+      margin-top: 40px;
+      margin-left: 7%;
+      gap: 45px;
+      margin-bottom: 10px;
+  }
+  .all2 li a{
+      color: rgb(255, 255, 255);
+      font-size: 22px;
+      text-decoration: none;
+      text-transform: capitalize;
+      transition: all .30s ease;
+  }
+  .all2 li a:hover{
+      color: green;
+  }
+    .container {
+      padding: 1.5rem;
+    }
+  
+    .contact-info:before {
+      display: none;
+    }
+  
+    .square,
+    .big-circle {
+      display: none;
+    }
+  
+    form,
+    .contact-info {
+      padding: 1.7rem 1.6rem;
+    }
+  
+    .text,
+    .information,
+    .social-media p {
+      font-size: 0.8rem;
+    }
+  
+    .title {
+      font-size: 1.15rem;
+    }
+  
+    .social-icons a {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+    }
+  
+    .icon {
+      width: 23px;
+    }
+  
+    .input {
+      padding: 0.45rem 1.2rem;
+    }
+  
+    .btn {
+      padding: 0.45rem 1.2rem;
+    }
+    footer{
+      background-color: rgb(0, 0, 0);
+      height:80.5vh;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.261);
+    }
+    .ck{
+      display: flex;
+      flex-direction: column;
+    }
+    .ck2{
+      width: 90%;
+      margin-top: 100px;
+      margin-left: -10px;
+    }
+    .st{
+      margin-left: 30px;
+      font-size: 30px;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      margin-bottom: 25px;
+    }
+    #ema{
+      padding: .75em;
+      width: 125%;
+      height: 6vh;
+      border-width: 1px;
+      color: green;
+      border-radius: 3px;
+    }
+    #ema::placeholder{
+      font-size: 18px;
+      color: rgba(0, 0, 0, 0.741);
+    }
+    #sub{
+      margin-top: 30px;
+      border: none;
+      padding: 15px 25px;
+      background-color: white;
+      color: darkgreen;
+      letter-spacing: 2px;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: bolder;
+    }
+    
+    .ck3{
+      margin-left: 1%;
+      margin-top: 40px;
+    }
+    .cont{
+      color: white;
+      font-size: 30px;
+      text-transform: capitalize;
+      margin-left: 30px;
+      margin-bottom: 25px;
+    }
+    .add{
+      width: 75%;
+      margin-left: 30px;
+      font-size: 18px;
+      text-transform: capitalize;
+      color: white;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+    .cal{
+      margin-left: 30px;
+      color: darkgreen;
+      text-decoration: none;
+      padding-top: 13px;
+      padding-left: 20px;
+      padding-bottom: 13px;
+      padding-right: 20px;
+      border-radius: 2px;
+      background-color: rgb(255, 255, 255);
+      text-transform: uppercase;
+      font-size: 20px;
+      transition: all .5s ease;
+      text-align: center;
+      font-weight: bolder;
+      letter-spacing: 3px;
+    }
+    .ca{
+      display: flex;
+      flex-direction: column;
+      margin-top: 10%;
+      margin-left: -110px;
+     transition: all .5s ease;
+     color: darkgreen;
+     font-size: 18px;
+    }
+    .ca:hover{
+      color: green;
+    }
+    .ca2{
+      display: flex;
+      flex-direction: column;
+      margin-top: 10%;
+      margin-left: 69.5px;
+     transition: all .5s ease;
+     color: darkgreen;
+     font-size: 18px;
+    }
+    .ca2:hover{
+      color: green;
+    }
+    /* Last */
+    .last{
+      background-color: black;
+      color: rgba(255, 255, 255, 0.468);
+      height: 10vh;
+      width: 100%;
+    }
+    .cop{
+      line-height: 20px;
+      padding-top: 25px;
+      margin-left: 20px;
+      font-size: 12px;
+      text-transform: capitalize;
+    }
+    
+  }
   @media only screen and (min-width: 370px) and (max-width:376px){
     html,body{
       margin: 0;
@@ -1224,126 +1589,125 @@ footer{
       padding: 0.45rem 1.2rem;
     }
     footer{
-        background-color: rgb(0, 0, 0);
-        height:95.5vh;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.261);
+      background-color: rgb(0, 0, 0);
+      height:110.5vh;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.261);
     }
     .ck{
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
     }
     .ck2{
-        width: 70%;
-        margin-top: 100px;
-        margin-left: 30px;
+      width: 90%;
+      margin-top: 100px;
+      margin-left: -10px;
     }
     .st{
-        font-size: 30px;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bolder;
-        margin-bottom: 25px;
+      margin-left: 30px;
+      font-size: 30px;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      margin-bottom: 25px;
     }
     #ema{
-        padding: .75em;
-        width: 135%;
-        height: 7vh;
-        border-width: 1px;
-        color: green;
-        border-radius: 3px;
-        margin-left: -20px;
+      padding: .75em;
+      width: 125%;
+      height: 6vh;
+      border-width: 1px;
+      color: green;
+      border-radius: 3px;
     }
     #ema::placeholder{
-        font-size: 18px;
-        color: rgba(0, 0, 0, 0.741);
+      font-size: 18px;
+      color: rgba(0, 0, 0, 0.741);
     }
     #sub{
-        margin-top: 30px;
-        border: none;
-        padding: 15px 25px;
-        background-color: white;
-        color: darkgreen;
-        letter-spacing: 2px;
-        font-size: 20px;
-        text-transform: uppercase;
-        font-weight: bolder;
-        margin-left: -20px;
+      margin-top: 30px;
+      border: none;
+      padding: 15px 25px;
+      background-color: white;
+      color: darkgreen;
+      letter-spacing: 2px;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: bolder;
     }
     
     .ck3{
-        margin-left: 1%;
-        margin-top: 70px;
+      margin-left: 1%;
+      margin-top: 40px;
     }
     .cont{
-        color: white;
-        font-size: 30px;
-        text-transform: capitalize;
-        margin-left: 30px;
-        margin-bottom: 25px;
+      color: white;
+      font-size: 30px;
+      text-transform: capitalize;
+      margin-left: 30px;
+      margin-bottom: 25px;
     }
     .add{
-        width: 75%;
-        margin-left: 30px;
-        font-size: 18px;
-        text-transform: capitalize;
-        color: white;
-        line-height: 30px;
-        margin-bottom: 30px;
+      width: 75%;
+      margin-left: 30px;
+      font-size: 18px;
+      text-transform: capitalize;
+      color: white;
+      line-height: 30px;
+      margin-bottom: 30px;
     }
     .cal{
-        margin-left: 30px;
-        color: darkgreen;
-        text-decoration: none;
-        padding-top: 13px;
-        padding-left: 20px;
-        padding-bottom: 13px;
-        padding-right: 20px;
-        border-radius: 2px;
-        background-color: rgb(255, 255, 255);
-        text-transform: uppercase;
-        font-size: 20px;
-        transition: all .5s ease;
-        text-align: center;
-        font-weight: bolder;
-        letter-spacing: 3px;
+      margin-left: 30px;
+      color: darkgreen;
+      text-decoration: none;
+      padding-top: 13px;
+      padding-left: 20px;
+      padding-bottom: 13px;
+      padding-right: 20px;
+      border-radius: 2px;
+      background-color: rgb(255, 255, 255);
+      text-transform: uppercase;
+      font-size: 20px;
+      transition: all .5s ease;
+      text-align: center;
+      font-weight: bolder;
+      letter-spacing: 3px;
     }
     .ca{
-        display: flex;
-        flex-direction: column;
-        margin-top: 10%;
-        margin-left: -95px;
-       transition: all .5s ease;
-       color: darkgreen;
-       font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 10%;
+      margin-left: -98px;
+     transition: all .5s ease;
+     color: darkgreen;
+     font-size: 18px;
     }
     .ca:hover{
-        color: green;
+      color: green;
     }
     .ca2{
-        display: flex;
-        flex-direction: column;
-        margin-top: 10%;
-        margin-left: 65px;
-       transition: all .5s ease;
-       color: darkgreen;
-       font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 10%;
+      margin-left: 68px;
+     transition: all .5s ease;
+     color: darkgreen;
+     font-size: 18px;
     }
     .ca2:hover{
-        color: green;
+      color: green;
     }
     /* Last */
     .last{
-        background-color: black;
-        color: rgba(255, 255, 255, 0.468);
-        height: 12vh;
-        width: 100%;
+      background-color: black;
+      color: rgba(255, 255, 255, 0.468);
+      height: 10vh;
+      width: 100%;
     }
     .cop{
-        line-height: 20px;
-        padding-top: 25px;
-        margin-left: 20px;
-        font-size: 12px;
-        text-transform: capitalize;
+      line-height: 20px;
+      padding-top: 25px;
+      margin-left: 20px;
+      font-size: 12px;
+      text-transform: capitalize;
     }
     
   }
