@@ -12,6 +12,16 @@
         src="https://kit.fontawesome.com/64d58efce2.js"
         crossorigin="anonymous"
       ></script>
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("j4j5W6w-_WISnu2_I");
+   })();
+</script>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
 
     <body>
@@ -90,27 +100,35 @@
                   <form action="index.html" autocomplete="off">
                     <h3 class="title">Contact us</h3>
                     <div class="input-container">
-                      <input type="text" name="name" required class="input" />
+                      <input type="text" name="name" id="fullName" required class="input" />
                       <label for="">Name</label>
                       <span>Name</span>
                     </div>
                     <div class="input-container">
-                      <input type="email" name="email" required class="input" />
+                      <input type="email" name="email" id="email_id" required class="input" />
                       <label for="">Email</label>
                       <span>Email</span>
                     </div>
                     <div class="input-container">
-                      <input type="tel" name="phone" required class="input" />
+                      <input type="tel" name="phone" id="phone" required class="input" />
                       <label for="">Phone</label>
                       <span>Phone</span>
                     </div>
                     <div class="input-container textarea">
-                      <textarea name="message" required class="input"></textarea>
+                      <textarea name="message" id="message" required class="input"></textarea>
                       <label for="">Message</label>
                       <span>Message</span>
                     </div>
-                    <input type="submit" value="Send" class="btn" />
                   </form>
+                  <button
+                  onclick="sendMail()"
+                  name="submit"
+                  type="submit"
+                  value="submit"
+                  class="btn"
+                >
+                  Submit
+                </button>
                 </div>
               </div>
             </div>
